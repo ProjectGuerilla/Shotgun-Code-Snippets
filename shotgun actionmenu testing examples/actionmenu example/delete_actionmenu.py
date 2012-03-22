@@ -1,9 +1,14 @@
 '''
+Call this script from the command line as python delete_actionmenu.py 
+***you MUST know the ID of the action menu you want to delete and enter it below
 
-Documentation to come - note that you will have to write a find routine to find the correct
-ID to delete!
+This is a very stupid script and is provided as a utility only
 
 
+Documentation to come - note that you will have to write a find routine to find the
+correct ID to delete!
+
+Author Tom Stratton / tom at tomstratton dot net 
 '''
 
 from shotgun_api3 import Shotgun

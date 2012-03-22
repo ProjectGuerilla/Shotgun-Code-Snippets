@@ -1,0 +1,35 @@
+There are 4 files in this script...
+
+There are edits necessary to make them
+work correctly in your environment.
+
+Edit sgkeys.cfg to contain the correct
+information for your set-up. This will
+include URL's, shotgun script keys and
+the name of the script created in the
+shotgun admin interface
+
+After that is edited you should be able
+to run the
+setup_actionmenu_create_playlist.py
+script to create the actionmenu. This
+script was tested on python 2.6. It
+returns the id of the menu_item in case
+you ever need to delete it. To run it
+you will have to have the shotgun API in
+your python path
+
+the other two scripts and the config
+file should reside on your seb server
+along-side a copy of the python API.
+
+You should not have to edit either of
+the scripts but if you want to fancy up
+the HTML, add CSS, etc. you are welcome
+to do so.
+
+These have been tested with Python 2.4
+
+if you have any questions contact
+Tom Stratton
+tom@tomstratton.net

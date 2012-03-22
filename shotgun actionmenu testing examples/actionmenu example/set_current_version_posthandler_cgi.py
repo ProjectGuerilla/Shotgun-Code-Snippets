@@ -1,5 +1,23 @@
 #!/usr/bin/python
-
+'''
+This is a cgi handler for a shotgun action menu item. It must reside on a web server
+    which is able to run python cgi scripts. In general, it is not on the same server
+    that hosts your shotgun database.
+    
+Specifically, this is a script that enables someone to call an action menu from a version
+    and that version will automatically update it's associated shot so that the "current 
+    version field" in the shot table points to the version selected before calling the
+    action menu. If more than one version is selected then all associated shots will be 
+    updated.
+    
+The URL of this script needs to be coded into your action menu item - see:
+    create_actionmenu.py for more info. You will need to put the shotgun_api3 folder in 
+    the same location as this script (on the server).
+    
+This is Version 0.1 of this handler - improvements have been made :-)
+    
+Author Tom Stratton / tom at tomstratton dot net
+'''
 # Import modules for CGI handling and shotgun API which must reside in same directory as this script
 import cgi, cgitb 
 from shotgun_api3 import Shotgun

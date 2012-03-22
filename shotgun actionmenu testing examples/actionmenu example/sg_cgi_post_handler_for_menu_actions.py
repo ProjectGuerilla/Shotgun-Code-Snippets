@@ -1,6 +1,15 @@
 #!/usr/bin/python
 # note - you may have a different path to python on your server! - 
-# Tested with Python2.4 on Site5 Shared Hosting
+'''
+This is a basic post request handler that can be run after you are sure that
+you are able to run python scripts as cgi.
+
+It can be set as the target of a Shotgun API action menu and will simply print out 
+    all of the information that is sent to the server by shotgun. It can also be useful
+    when debugging or as a stub for writing your own handler/
+    
+Author Tom Stratton / tom at tomstratton dot net    
+'''
 
 # Import modules for CGI handling 
 import cgi, cgitb 

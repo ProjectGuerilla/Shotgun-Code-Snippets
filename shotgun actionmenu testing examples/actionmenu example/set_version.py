@@ -1,44 +1,12 @@
 '''
-What we are looking for, is a feature to create a playlist from within the shot list view ... 
-we wanna have a ActionMenu script that can build a playlist of the selected shots and 
-automatically look for a version based on one of the following :
+A hard coded script that I wrote as an intermediate step while writing
+    a Shotgun API actionmenu handler.
+    
+It's probably not of much use to anyone but I don't see any reason to delete it yet,
+    there are a LOT of hard coded values here so don't try and run this on your
+    shotgun db. It's strictly a code sample.
 
-1: A custom field we created under shots > current_version ... 
-    in order to set the current version, we would also need a 
-    ActionMenu script under the version page - where you can "Set as Current"
-
-2: Newest version related to this shot
-
-These to options should be two diffrent ActionMenu items (scripts)
-
-
-    under the Version Detail Page - create a ActionMenu script called "Set as Current" - 
-       - this should set/link the Current Version field, on the related/linked shot.
-
-SAMPLE RESULTS FROM POST
-    project_name Stereo Conversion Template 
-    
-    page_title Versions 
-    
-    entity_type Version 
-    
-    user_login tom 
-    
-    sort_column sg_task.Task.step 
-    
-    all_ids 19,20,93 
-    
-    selected_ids 19,20,93 
-    
-    sort_direction desc 
-    
-    user_id 52 
-    
-    project_id 64 
-    
-    column_display_names Version Name,Thumbnail,Link,Artist,Current Version2,Description,Status,Path to Frames,Uploaded Movie,Date Created 
-    
-    columns code,image,entity,user,sg_current_version2,description,sg_status_list,sg_path_to_frames,sg_uploaded_movie,created_at 
+Author Tom Stratton / tom at tomstratton dot net 
 '''
 
 from shotgun_api3 import Shotgun
